@@ -1,0 +1,32 @@
+[
+  {
+    "role": "AI/ML Engineer",
+    "company": "Tata Consultancy Services (TCS)",
+    "period": "Nov 2025 — Present",
+    "highlights": [
+      "Design and implement LLM-powered AI agents with an emphasis on safety, reliability, alignment and systematic evaluation.",
+      "Investigate hallucinations, adversarial robustness and model failure modes through empirical analysis to improve AI system behavior.",
+      "Contribute to evaluation approaches that make agent behavior more measurable, interpretable and dependable."
+    ]
+  },
+  {
+    "role": "Full Stack Developer Intern",
+    "company": "Kireap",
+    "period": "Aug 2024 — Jan 2025",
+    "highlights": [
+      "Contributed to a Flutter application and refined client onboarding workflows to improve the user experience.",
+      "Integrated backend APIs and used Postman to validate request-response flows, investigate defects and improve application functionality.",
+      "Researched token-based systems and blockchain traceability, identifying opportunities to strengthen transparency and data security."
+    ]
+  },
+  {
+    "role": "Frontend Developer Intern",
+    "company": "Xplor",
+    "period": "Dec 2023 — Feb 2024",
+    "highlights": [
+      "Built interactive React.js components and integrated REST APIs to deliver responsive, data-driven web experiences.",
+      "Collaborated with backend engineers to optimize data flow and improve page responsiveness by 15%.",
+      "Validated application behavior through frontend testing, debugging and systematic test-case analysis."
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+---
+import { profile } from '../data';
+
+const links = [
+  { platform: 'email', href: `mailto:${profile.email}`, label: `Email ${profile.name}` },
+  ...profile.social.map(({ platform, url }) => ({
+    platform,
+    href: url,
+    label: `Visit ${platform === 'github' ? 'GitHub' : 'LinkedIn'} profile`,
+  })),
+];
+---
+
+<div class="social-links" role="group" aria-label="Contact links">
+  {links.map((link) => (
+    <a href={link.href} aria-label={link.label} title={link.label}>
+      {link.platform === 'email' ? (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2.5" y="5" width="19" height="14" rx="2" />
+          <path d="m3.5 7 8.5 6 8.5-6" />
+        </svg>
+      ) : link.platform === 'linkedin' ? (
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM8 18.75H5V9h3v9.75ZM6.5 7.66a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5Zm12.25 11.09h-3v-4.74c0-1.13-.02-2.58-1.57-2.58-1.57 0-1.81 1.23-1.81 2.5v4.82h-3V9h2.88v1.33h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.62 2 3.62 4.6v5.38Z" />
+        </svg>
+      ) : (
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11.82-.261.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.839 1.238 1.839 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.304.762-1.604-2.665-.303-5.466-1.333-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.323 3.301 1.23A11.535 11.535 0 0 1 12 5.803c1.02.005 2.047.138 3.004.404 2.291-1.553 3.298-1.23 3.298-1.23.655 1.652.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.221 0 4.61-2.805 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.604-.015 2.896-.015 3.293 0 .32.216.694.825.577C20.566 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12Z" />
+        </svg>
+      )}
+    </a>
+  ))}
+</div>

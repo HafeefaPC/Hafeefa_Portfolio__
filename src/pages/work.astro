@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { posts, projects, stack } from '../data';
+---
+
+<Layout pageTitle="Work">
+  <section class="content-section" aria-labelledby="projects-title">
+    <div class="section-heading">
+      <h3 id="projects-title">Projects</h3>
+    </div>
+    <div class="entry-list">
+      {projects.map((project) => {
+        const primaryLink = project.liveUrl ?? project.repoUrl;
+        return (
+          <article class="entry">
+            <div class="entry-top">
+              <h4>
+                {primaryLink ? <a href={primaryLink}>{project.title}<span aria-hidden="true"> ↗</span></a> : project.title}
+              </h4>
+            </div>
+            <p>{project.summary}</p>
+            <p class="entry-outcome">{project.outcome}</p>
+            <p class="entry-meta">{project.stack.join(' · ')}</p>
+            {project.repoUrl && project.liveUrl && <a class="secondary-link" href={project.repoUrl}>Source code ↗</a>}
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="content-section" aria-labelledby="stack-title">
+    <div class="section-heading">
+      <h3 id="stack-title">Tech stack</h3>
+    </div>
+    <p class="stack-summary">{stack.join(' · ')}</p>
+  </section>
+
+  <section class="content-section" aria-labelledby="writing-title">
+    <div class="section-heading">
+      <h3 id="writing-title">Writing</h3>
+    </div>
+    <div class="entry-list">
+      {posts.map((post) => (
+        <article class="entry">
+          <div class="entry-top">
+            <h4>{post.url ? <a href={post.url}>{post.title}<span aria-hidden="true"> ↗</span></a> : post.title}</h4>
+            <span class="entry-date">{post.date}</span>
+          </div>
+          <p>{post.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</Layout>

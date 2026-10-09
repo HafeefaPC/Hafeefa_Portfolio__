@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Engineering Reliable RAG Systems: Beyond Vector Search",
+    "summary": "A practical breakdown of document chunking, embedding selection, retrieval quality, context construction, caching and hallucination evaluation. Explain how each stage affects the reliability of a domain-specific AI assistant.",
+    "date": "Draft idea"
+  },
+  {
+    "title": "Evaluating Fraud Detection Models Under Extreme Class Imbalance",
+    "summary": "Explore why accuracy can be misleading in fraud detection, how SMOTE and undersampling change the training distribution, and how PR-AUC, F1-score and decision thresholds help assess minority-class performance.",
+    "date": "Draft idea"
+  },
+  {
+    "title": "Building Safer LLM Agents Through Systematic Evaluation",
+    "summary": "Discuss how to characterize agent failure modes, test adversarial inputs, investigate hallucinations and turn qualitative observations into repeatable evaluation procedures.",
+    "date": "Draft idea"
+  }
+]

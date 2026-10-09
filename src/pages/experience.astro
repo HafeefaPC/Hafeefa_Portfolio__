@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { education, experience } from '../data';
+---
+
+<Layout pageTitle="Background">
+  <section class="content-section" aria-labelledby="experience-title">
+    <div class="section-heading">
+      <h3 id="experience-title">Experience</h3>
+    </div>
+    <div class="entry-list">
+      {experience.map((item) => (
+        <article class="entry">
+          <div class="entry-top">
+            <h4>{item.role}</h4>
+            <span class="entry-date">{item.period}</span>
+          </div>
+          <p class="entry-organization">{item.company}</p>
+          <ul class="highlight-list">
+            {item.highlights.map((highlight) => <li>{highlight}</li>)}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="content-section" aria-labelledby="education-title">
+    <div class="section-heading">
+      <h3 id="education-title">Education</h3>
+    </div>
+    <div class="entry-list">
+      {education.map((item) => (
+        <article class="entry">
+          <div class="entry-top">
+            <h4>{item.qualification}</h4>
+            <span class="entry-date">{item.period}</span>
+          </div>
+          <p class="entry-organization">{item.institution}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { profile } from '../data';
+---
+
+<Layout pageTitle="About">
+  <div class="prose-block">
+    {profile.about.map((paragraph) => <p>{paragraph}</p>)}
+  </div>
+</Layout>

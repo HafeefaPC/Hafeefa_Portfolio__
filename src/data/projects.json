@@ -1,0 +1,110 @@
+[
+  {
+    "title": "LifeScience-AI Agent",
+    "summary": "Engineered a domain-specific research assistant using Retrieval-Augmented Generation (RAG) to answer life sciences questions grounded in curated biomedical literature and regulatory documents. Designed a modular pipeline covering document chunking, embeddings, vector retrieval, context selection, and answer synthesis.",
+    "outcome": "Applied prompt optimization and caching strategies to improve factual grounding and reduce hallucinations during evaluation.",
+    "stack": [
+      "Python",
+      "LLMs",
+      "RAG",
+      "Embeddings",
+      "Vector Search"
+    ]
+  },
+  {
+    "title": "Aurum-Chain — Digital Gold Traceability",
+    "summary": "Built a blockchain-powered gold traceability platform for tracking ownership and supply-chain movement from mine to market. Developed responsive Next.js interfaces, Solidity smart contracts, and interactive dashboards for customers, suppliers, and administrators.",
+    "outcome": "The project reports a 60% improvement in fraud prevention and a 50% improvement in traceability efficiency. Implemented gold ownership registration, transfer tracking, and tax-evasion identification workflows.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Solidity",
+      "Scaffold-ETH 2",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Arweave",
+      "Anon Aadhaar"
+    ],
+    "github": "https://github.com/HafeefaPC/aurum-chain"
+  },
+  {
+    "title": "Credit Card Fraud Detection",
+    "summary": "Developed a machine learning pipeline to identify fraudulent credit card transactions across more than 284,807 records with severe class imbalance. Compared Logistic Regression, Random Forest, and XGBoost using resampling, class weighting, and threshold optimization.",
+    "outcome": "Achieved 0.88 PR-AUC and an 86% F1-score. Applied PCA for dimensionality reduction and KMeans and DBSCAN for customer analysis.",
+    "stack": [
+      "Python",
+      "Scikit-learn",
+      "XGBoost",
+      "SMOTE",
+      "PCA",
+      "KMeans",
+      "DBSCAN"
+    ]
+  },
+  {
+    "title": "LLM Agent Reliability and AI Safety",
+    "summary": "Worked on LLM-powered AI applications and agents, investigating hallucinations, adversarial robustness, failure modes, and model behavior. Focused on systematic evaluation and identifying opportunities to improve safety, alignment, interpretability, and reliability.",
+    "outcome": "Contributed to empirical analysis and evaluation approaches for understanding and mitigating unreliable model behavior.",
+    "stack": [
+      "Python",
+      "LLMs",
+      "AI Agents",
+      "Model Evaluation",
+      "AI Safety"
+    ]
+  },
+  {
+    "title": "GCP Dataflow Incident Ingestion POC",
+    "summary": "Designed a transformation-layer proof of concept for incident ingestion, covering streaming messages from Pub/Sub and batch document processing from Cloud Storage using Document AI. The implementation explored parsing, validation, canonical mapping, error handling, and standardized output objects.",
+    "outcome": "Established a modular transformation workflow with validation, dead-letter handling, logging, metrics, and local test infrastructure. The scope focused on the Dataflow transformation layer rather than duplicating downstream canonical persistence.",
+    "stack": [
+      "Python",
+      "Google Cloud Dataflow",
+      "Pub/Sub",
+      "Cloud Storage",
+      "Document AI",
+      "BigQuery",
+      "Dataform"
+    ]
+  },
+  {
+    "title": "Aurum-Chain Smart Contract and Ownership Tracking",
+    "summary": "Implemented decentralized application components for registering, tracking, and transferring gold ownership. Combined smart-contract workflows with application dashboards to make ownership history and supply-chain movements easier to inspect.",
+    "outcome": "Supported transparent ownership tracking and supply-chain traceability through blockchain-based records.",
+    "stack": [
+      "Solidity",
+      "Scaffold-ETH 2",
+      "Next.js",
+      "Arweave"
+    ],
+    "github": "https://github.com/HafeefaPC/aurum-chain"
+  },
+  {
+    "title": "Executo.AI — AI-Powered Task Automation",
+    "summary": "Developed a Flutter-based task automation application that leverages LLMs to generate and execute code for user-defined tasks. Implemented a modular architecture with separate layers for task definition, code generation, execution, and result presentation.",
+    "outcome": "Enabled users to automate repetitive tasks through natural language input, improving productivity and reducing manual effort.",
+    "stack": [
+      "Flutter",
+      "Dart",
+      "LLMs",
+      "Code Generation",
+      "Task Automation"
+    ],
+    "github": "https://github.com/HafeefaPC/executo.Ai"
+  },
+  {
+    "title": "BillBitz — AI-Powered Personal Finance",
+    "summary": "Developed a Flutter-based money management application using Gemini API to support image-based and voice-to-text expense entry, alongside manual transaction recording. Integrated payment functionality with Google Pay (GPay) and structured the application around Clean Architecture for better separation of concerns.",
+    "outcome": "Combined multimodal AI-assisted expense capture with manual entry and payment workflows in a single personal finance application.",
+    "stack": [
+      "Flutter",
+      "Dart",
+      "Google Gemini API",
+      "Hive",
+      "Clean Architecture",
+      "Google Pay Integration"
+    ],
+    "github": "https://github.com/HafeefaPC/executo.Ai",
+    "demo": "https://billbitz.netlify.app"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "name": "Hafeefa PC",
+  "role": "AI/ML Automation Engineer | Generative AI & Full-Stack Systems",
+  "portraitSrc": "profile.jpeg",
+  "portraitFrameSrc": "frame.png",
+  "portraitAlt": "Portrait of Hafeefa PC",
+  "footerIllustrationSrc": "girl.png",
+  "location": "Kochi, India",
+  "timeZone": "Asia/Kolkata",
+  "intro": "I engineer intelligent systems that connect applied AI, rigorous evaluation and dependable software engineering.",
+  "about": [
+    "I work at the intersection of Generative AI, LLM-powered agents and software engineering, translating complex technical problems into modular, testable systems. My work spans AI safety and evaluation, retrieval-augmented generation, machine learning and full-stack application development.",
+    "I approach engineering through clear problem decomposition, evidence-driven experimentation and deliberate trade-offs. From grounding LLM responses in domain-specific knowledge to evaluating fraud detection models on imbalanced data, I focus on building systems whose behavior can be tested, understood and improved.",
+    "Beyond implementation, I enjoy exploring emerging technologies, competing in engineering hackathons and turning technical ideas into working products. I am particularly interested in reliable AI agents, scalable data systems and the engineering practices that make intelligent applications useful in the real world."
+  ],
+  "email": "hafeefapc2003@gmail.com",
+  "social": [
+    {
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/hafeefa-pc/"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/HafeefaPC"
+    }
+  ]
+}
